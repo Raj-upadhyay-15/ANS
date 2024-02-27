@@ -1,0 +1,37 @@
+<% include ./partials/header.ejs %>
+
+<div id="main">
+  <div id="navbar">
+    <div id="logo"><img src="/images/logo.png" alt=""></div>
+    <div class="about">
+      <a class="nav-link" href="/">Home <i class="ri-home-fill"></i></a>
+      <a class="nav-link" href="/About">About<i class="ri-shake-hands-fill"></i></a>
+      <a class="nav-link" href="/Community">Community<i class="ri-community-fill"></i></a>
+
+    </div>
+    <div class="user">
+      <a href="/login"><i class="ri-user-3-fill"></i></a>
+      <a href=""><i class="ri-global-fill"></i></a>
+    </div>
+  </div>
+  <div id="login">
+    <img class="cutout1" src="/images/cutout3.avif" alt="">
+<div id="loginpart"><div id="part2"> 
+   <form  action="/login" method="post">
+  <h5>username</h5>
+  <input type="text" placeholder="username" name="username">
+  <h5>password</h5>
+  <input type="password" placeholder="password" name="password">
+
+  <input class="submit" type="submit" value="Log In">
+  <span>Don't have an account ? <a href="/register" class="text-blue-500">Sign Up</a></span>
+</form>
+</div></div>
+
+ <img class="cutout2" src="/images/cutout5.avif" alt="">
+     <!-- <img class="cutout3" src="/images/cutout2.avif" alt=""> -->
+     
+  </div>
+</div>
+
+<% include ./partials/footer.ejs %>

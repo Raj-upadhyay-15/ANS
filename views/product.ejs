@@ -1,0 +1,47 @@
+<% include ./partials/header.ejs %>
+<div id="main">
+  <div id="navbar">
+    <div id="logo"><img src="/images/logo.png" alt=""></div>
+    <div class="about">
+      <a class="nav-link" href="/">Home <i class="ri-home-fill"></i></a>
+      <a class="nav-link" href="/About">About<i class="ri-shake-hands-fill"></i></a>
+      <a class="nav-link" href="/Community">Community<i class="ri-community-fill"></i></a>
+
+    </div>
+    <div class="user">
+      <a href="/login"><i class="ri-user-3-fill"></i></a>
+      <a href=""><i class="ri-global-fill"></i></a>
+    </div>
+  </div>
+    <div id="productpage1">
+
+ <div id="leftside">
+ 
+        <form action="/purchase" method="post">
+            <h5>Country</h5>
+            <select name="country">
+                <option value="usa">USA</option>
+                <option value="uk">UK</option>
+                <option value="canada">Canada</option>
+                <option value="canada">India</option>
+                <option value="canada">Europe</option>
+              
+            </select>
+    
+            <h5>Stream</h5>
+            <input type="text" placeholder="Enter stream" name="stream">
+    
+            <h5>Digital Edition</h5>
+            <input type="checkbox" id="digitalEdition" name="digitalEdition">
+            <label for="digitalEdition">Yes, I want the digital edition</label>
+    
+            <input class="submit" type="submit" value="Purchase">
+        </form>
+  
+    
+ </div>
+ <div id="rightside"><h1>digital edition</h1>
+<p>TONY hawk's 1 + 2 game</p></div>
+    </div>
+</div>
+<% include ./partials/footer.ejs %>
